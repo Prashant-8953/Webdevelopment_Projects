@@ -9,10 +9,15 @@
     font-style: normal;
    
 }
-
+body{
+    background-color: black;
+}
 .main{
     background-image: url("assets/Images/Netflix_Logo.jpg");
-    height: 85vh;
+    height: 90vh;
+    background-position: center center;
+    background-repeat: none;
+    background-size: max(1200px , 100vw);
    /* border: 2px solid red; */
  
 }
@@ -24,7 +29,7 @@
   background-color: black;
    position: absolute;
    width: 100%;
-   height: 85vh;
+   height: 90vh;
 /* border: 2px solid rgb(43, 255, 0); */
 }
 .main .nav{
@@ -59,14 +64,228 @@
 }
 
 .getstarted input{
-    width: 450px;
+    width: 350px;
     height: 50px;
     background-color: transparent;
-    border: 2px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.495);
     color: rgb(255, 255, 255);
     outline-color: red;
     background-color: rgba(0, 0, 0, 0.543);
-    opacity: 0.44;
+    opacity: 1.44;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.getstarted input::placeholder{
+    color: aliceblue;
+    font-size: 16px;
+ 
+}
+
+.getstarted button{
+    color: aliceblue;
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.getstarted,.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons #language,.buttons button{
+    color: aliceblue;
+    background-color: red;
+    width: 85px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+   
+}
+
+.buttons #language{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.495);
+}
+
+.line{
+    width: 100%;
+    height: 10px;
+    /* border: 1px solid rgba(33, 29, 29, 0.966); */
+    background-color: rgb(70, 70, 70);
+    
+}
+
+@media (max-width:820px){
+    /* .main .box h1,.main .box h4,.main .box h3{
+    } */
+    .main .box{
+        font-size: 1.2rem;
+       top: 60px;  
+       flex-wrap: wrap;     
+       text-align: center;
+    }
+
+   
+    
+}
+
+@media (max-width:650px){
+    
+    .main,.container{
+        height: 100vmax;
+        /* border: 2px solid red; */
+    }
+    .main{
+        top:100px;
+    }
+    .getstarted{
+        flex-direction: column;
+      
+        /* border: 2px solid red; */
+    }
+}
+
+@media (max-width:460px){
+    
+.main .nav{
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+  
+.main,.container{
+    height: 100vmax;
+    /* border: 2px solid red; */
+}
+
+.getstarted button{
+    font-size: 18px;
+    width: 40vw;
+    height: 10vh;
+}
+
+}
+
+.section_one{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: aliceblue;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.section_one h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.section_one p{
+    font-size: 1.5rem;
+}
+
+.para,.tvshow{
+    width: 40%;
+}
+
+.section_two{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: aliceblue;
+    flex-wrap: wrap;
+    margin: 40px;
+    
+   
+}
+
+.mob_para{
+    width: 40%;
+}
+
+.section_two p{
+    font-size: 1.5rem;
+}
+
+.section_two h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+
+.section_three{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: aliceblue;
+    flex-wrap: wrap;
+    margin: 40px; 
+   
+}
+
+.panel_para{
+    width: 40%;
+}
+
+.section_three p{
+    font-size: 1.5rem;
+}
+
+.section_three h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+
+
+.section_four{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: aliceblue;
+    flex-wrap: wrap;
+    margin: 40px;    
+}
+
+.child_para{
+    width: 40%;
+}
+
+.section_four p{
+    font-size: 1.5rem;
+}
+
+.section_four h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+.section_five{
+   
+    text-align: center;
+    color: aliceblue;
+   
+      
+}
+
+.section_five h1{
+    font-size: 42px;
+    margin-top: 30px; 
 }
 
 
