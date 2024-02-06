@@ -200,6 +200,14 @@ body{
     width: 40%;
 }
 
+.section_one video{
+    position: relative;
+    top: -386px;
+    left: 367px;
+    width: 466px;
+    z-index: -54;
+}
+
 .section_two{
     display: flex;
     align-items: center;
@@ -249,7 +257,13 @@ body{
     font-weight: 900;
 }
 
-
+.section_three video{
+    position: relative;
+    top: -426px;
+    left: 327px;
+    width: 390px;
+    z-index: -54;
+}
 
 
 .section_four{
@@ -285,7 +299,42 @@ body{
 
 .section_five h1{
     font-size: 42px;
-    margin-top: 30px; 
+    margin: 30px auto; 
+}
+
+
+.faq{
+    background-color: rgb(47, 47, 47);
+    width: 80%;
+    height: 10vh;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.faq:hover{
+    background-color: rgb(66, 66, 66);
+}
+
+.faq_email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    margin-bottom: 80px;
+}
+
+
+.memb{
+    font-size: 1.3rem;
+    margin-top: 50px ;
+    margin-bottom: 20px ;
 }
 
 
