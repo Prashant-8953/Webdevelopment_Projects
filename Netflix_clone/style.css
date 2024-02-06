@@ -101,7 +101,7 @@ body{
     gap: 10px;
 }
 
-.buttons #language,.buttons button{
+.buttons #language,.buttons button,.foot_lang{
     color: aliceblue;
     background-color: red;
     width: 85px;
@@ -114,68 +114,17 @@ body{
    
 }
 
-.buttons #language{
+.buttons #language,.foot_lang{
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.495);
 }
 
 .line{
     width: 100%;
-    height: 10px;
+    height: 7px;
     /* border: 1px solid rgba(33, 29, 29, 0.966); */
     background-color: rgb(70, 70, 70);
     
-}
-
-@media (max-width:820px){
-    /* .main .box h1,.main .box h4,.main .box h3{
-    } */
-    .main .box{
-        font-size: 1.2rem;
-       top: 60px;  
-       flex-wrap: wrap;     
-       text-align: center;
-    }
-
-   
-    
-}
-
-@media (max-width:650px){
-    
-    .main,.container{
-        height: 100vmax;
-        /* border: 2px solid red; */
-    }
-    .main{
-        top:100px;
-    }
-    .getstarted{
-        flex-direction: column;
-      
-        /* border: 2px solid red; */
-    }
-}
-
-@media (max-width:460px){
-    
-.main .nav{
-  flex-direction: column;
-  align-items: start;
-  gap: 15px;
-}
-  
-.main,.container{
-    height: 100vmax;
-    /* border: 2px solid red; */
-}
-
-.getstarted button{
-    font-size: 18px;
-    width: 40vw;
-    height: 10vh;
-}
-
 }
 
 .section_one{
@@ -186,6 +135,7 @@ body{
     flex-wrap: wrap;
     margin: 10px;
 }
+
 
 .section_one h1{
     font-size: 3rem;
@@ -214,9 +164,7 @@ body{
     justify-content: space-evenly;
     color: aliceblue;
     flex-wrap: wrap;
-    margin: 40px;
-    
-   
+    margin: 40px;   
 }
 
 .mob_para{
@@ -337,4 +285,29 @@ body{
     margin-bottom: 20px ;
 }
 
+.footer{
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.link{
+    display: flex;
+    margin: 80px auto;
+    flex-direction: column;
+    color: rgb(255, 255, 255);  
+    
+}
+
+.link a{
+    text-decoration: none;
+    color: aliceblue;
+   margin: 7px;
+   text-decoration: underline;
+}
+
+.extra_foot{
+    margin: 10px;
+
+}
