@@ -3,14 +3,16 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
-   
+    
 }
 body{
     background-color: black;
+   
+
 }
 .main{
     background-image: url("assets/Images/Netflix_Logo.jpg");
@@ -19,7 +21,7 @@ body{
     background-repeat: none;
     background-size: max(1200px , 100vw);
    /* border: 2px solid red; */
- 
+
 }
    
    
@@ -133,7 +135,7 @@ body{
     justify-content: space-evenly;
     color: aliceblue;
     flex-wrap: wrap;
-    margin: 10px;
+    margin-left:400px;
 }
 
 
@@ -146,15 +148,21 @@ body{
     font-size: 1.5rem;
 }
 
-.para,.tvshow{
+.para{
     width: 40%;
 }
 
+.tvshow{
+    /* border: 2px solid red; */
+    overflow: hidden;
+
+}
+
+
 .section_one video{
     position: relative;
-    top: -386px;
-    left: 367px;
-    width: 466px;
+    right: 560px;
+    bottom: 116px;
     z-index: -54;
 }
 
@@ -188,17 +196,23 @@ body{
     justify-content: space-evenly;
     color: aliceblue;
     flex-wrap: wrap;
-    margin: 40px; 
+    margin-left:400px;
    
 }
 
 .panel_para{
     width: 40%;
+   
 }
 
+.tv_panel{
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
 .section_three p{
     font-size: 1.5rem;
 }
+
 
 .section_three h1{
     font-size: 3rem;
@@ -206,9 +220,10 @@ body{
 }
 
 .section_three video{
+    /* border: 2px solid rgb(4, 255, 0); */
     position: relative;
-    top: -426px;
-    left: 327px;
+    right: 523px;
+    bottom: 206px;
     width: 390px;
     z-index: -54;
 }
@@ -289,6 +304,7 @@ body{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  
     
 }
 
@@ -310,4 +326,15 @@ body{
 .extra_foot{
     margin: 10px;
 
+}
+
+
+@media screen and (max-width:2300px) {
+    .section_one,.section_three{
+    border:  2px solid red;
+   width: 100%;
+   margin: 0 auto;
+   padding-left: 300px;
+   flex-wrap: wrap;
+    }
 }
