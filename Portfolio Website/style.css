@@ -288,6 +288,28 @@ main{
 
 }
 
+
+#home .home-row a #btn{
+    margin: 25px;
+    padding: 10px;
+    margin-left: 0;
+    border-radius: 10px;    
+    font-weight: bolder;
+    cursor: pointer;
+    border: 2px solid var(--themecolor);
+    font-size: 16px;
+    background-color: var(--themecolor);
+    color: var(--bgcolor);
+    transition: 0.7s;
+   
+}
+
+#home .home-row a #btn:hover{
+    color: var(--themecolor);
+    background-color: var(--bgcolor);
+}
+
+
 /* mobile view   */
 
 @media only screen and (max-width:670px) {
