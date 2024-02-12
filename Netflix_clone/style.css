@@ -129,42 +129,55 @@ body{
     
 }
 
+/* start section one */
+
 .section_one{
+    color: aliceblue;
+    /* border: 2px solid red; */
     display: flex;
+    /* height: 80vh; */
     align-items: center;
     justify-content: space-evenly;
-    color: aliceblue;
-    flex-wrap: wrap;
-    margin-left:400px;
 }
 
-
-.section_one h1{
-    font-size: 3rem;
-    font-weight: 900;
+.section_one .para{
+    /* border: 2px solid rgb(8, 0, 255); */
+    flex-wrap: wrap;
+    height: 75vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section_one p{
     font-size: 1.5rem;
 }
 
-.para{
-    width: 40%;
+.section_one h1{
+    font-size: 3rem;
+    font-weight: 900;
 }
 
-.tvshow{
-    /* border: 2px solid red; */
+.section_one .tvshow{
+    /* border: 2px solid rgb(0, 255, 174); */
     overflow: hidden;
-
+    height: 75vh;
+    width: 40%;
+    flex-wrap: wrap;
 }
 
 
-.section_one video{
+.section_one .tvshow video{
+    
     position: relative;
-    right: 560px;
-    bottom: 116px;
-    z-index: -54;
+   z-index: -52;
+   bottom: 390px;
+   left: 70px;
+ 
 }
+
+
 
 .section_two{
     display: flex;
@@ -191,23 +204,30 @@ body{
 
 
 .section_three{
-    display: flex;
+    
     align-items: center;
     justify-content: space-evenly;
     color: aliceblue;
     flex-wrap: wrap;
-    margin-left:400px;
+   display: flex;
+   gap: 20px;
    
 }
 
 .panel_para{
     width: 40%;
-   
+    /* border: 2px solid red; */
+    
 }
 
 .tv_panel{
     /* border: 2px solid red; */
-    overflow: hidden;
+    width: 50%;
+    /* border: 2px solid red; */
+    height: 70vh;
+    margin-top: 50px;
+   
+   
 }
 .section_three p{
     font-size: 1.5rem;
@@ -222,11 +242,13 @@ body{
 .section_three video{
     /* border: 2px solid rgb(4, 255, 0); */
     position: relative;
-    right: 523px;
-    bottom: 206px;
-    width: 390px;
-    z-index: -54;
+    bottom: 450px;
+    left: 120px;
+    z-index: -4;
+    width:400px;
 }
+
+
 
 
 .section_four{
@@ -329,12 +351,3 @@ body{
 }
 
 
-@media screen and (max-width:2300px) {
-    .section_one,.section_three{
-    border:  2px solid red;
-   width: 100%;
-   margin: 0 auto;
-   padding-left: 300px;
-   flex-wrap: wrap;
-    }
-}
