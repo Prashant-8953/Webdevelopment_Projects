@@ -897,7 +897,7 @@ main{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--themecolor);
+    background-color:#00a78e8a;
     padding: 0px 15px;
     text-align: center;
     display: flex;
