@@ -886,8 +886,11 @@ main{
 }
 
 #portfolio .port-row .port-item .port-img img{
-    width: 100%;
+    width: 100% !important;
+    height: 250px;
     border-radius: 10px;
+   
+ 
 }
 
 #portfolio .port-row .port-item .port-info{
@@ -897,7 +900,7 @@ main{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:#00a78e8a;
+    background-color:#00a78ee3;
     padding: 0px 15px;
     text-align: center;
     display: flex;
@@ -955,7 +958,8 @@ main{
 
 /* mobile view  */
 
-@media only screen and (max-width:650px) {
+
+@media only screen and (max-width:1250px) {
 
     #portfolio{
         padding: 50px 15px;    
@@ -971,7 +975,23 @@ main{
     
 }
 
-@media only screen and (max-width:350px){
+@media only screen and (max-width:750px) {
+
+    #portfolio{
+        padding: 50px 15px;    
+    }
+    
+    #portfolio .port-row{
+    
+       
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 15px;
+    
+    }
+    
+}
+
+@media only screen and (max-width:500px){
 
     #portfolio .port-row{
     
