@@ -1241,3 +1241,26 @@ main{
 
 
 /* contactus section end   */
+
+
+@media only screen and (max-width:360px) {
+
+    body{
+       
+       width:fit-content;
+    }
+    header{
+        width: 100%;    
+        left: -500px;
+        height: 100%;
+    }
+    
+    
+    header .footer{
+        
+        width: 100%;  
+        left: -500px;
+        border-top: 2px solid white;
+    
+    }
+}
