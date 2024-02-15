@@ -137,7 +137,7 @@ header .footer{
     bottom: 0;
     left: 0;
     transition: 0.4s;
-
+    border-top: 2px solid white;
 
 }
 
