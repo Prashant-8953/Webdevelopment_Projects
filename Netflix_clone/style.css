@@ -73,26 +73,7 @@ body{
     font-weight: 700;
 }
 
-@media (max-width:1496px) {
-    .main .box h1,.main .box h4,.main .box h3{
-        margin: 7px 0;
-        font-weight: 500;
 
-    }
-
-    .main .box{
-        /* border: 2px solid red; */
-        top: 100px;
-    }
-
-    
-    
-    .section_one .tvshow{
-      border: 2px solid red;
-     
-       
-    }
-}
 
 
 .getstarted input{
@@ -163,150 +144,140 @@ body{
 /* start section one */
 
 .section_one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   max-width: 90vw;
     color: aliceblue;
-    /* border: 2px solid rgb(238, 255, 0); */
-    display: flex;   
-    align-items: center;  
-    height: 70vh; 
-    width: 100%;
-    justify-content: space-around;
-    padding: 40px;
-    gap: 60px;
+    margin: auto;
+
+}
+
+.tvshow img{
+    width: 555px;
+   
+}
+.tvshow {
+    position: relative;
+}
+.tvshow  video{
+    position: absolute;
+    top: 86px;
+    right: 77px;
+    z-index: -10;
+    width: 405px;
    
 }
 
-.section_one .para{
-    /* border: 2px solid rgb(8, 0, 255); */
-    /* flex-wrap: wrap; */
-    height: 100%;
-    width: 100%;
-    display: flex;   
-    align-items: center;
-    
+.para p{
+    font-size: 1.4rem;
 }
 
-.section_one p{
-    font-size: 1.5rem;
-}
-
-.section_one h1{
-    font-size: 3rem;
+.para h1{
+    font-size: 2rem;
     font-weight: 900;
 }
 
-.section_one .tvshow{
-    /* border: 2px solid rgb(0, 255, 174); */
-    /* overflow: hidden; */
-    height: 100%;
-    width: 100%;
-    /* flex-wrap: wrap; */
-    margin-bottom: 70px;
-   
-}
 
-
-.section_one .tvshow video{
-    
-    position: relative;
-   z-index: -52;
-   bottom: 390px;
-   left: 70px;
- 
-}
-
-
+/* start section two */
 
 .section_two{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     color: aliceblue;
-    /* flex-wrap: wrap; */
-    margin: 40px;   
+    max-width: 90vw;
+    /* margin: auto;    */
 }
 
-.mob_para{
-    width: 40%;
+
+
+.mob_para p{
+    font-size: 1.4rem;
 }
 
-.section_two p{
-    font-size: 1.5rem;
-}
-
-.section_two h1{
-    font-size: 3rem;
+.mob_para h1{
+    font-size: 2rem;
     font-weight: 900;
 }
+
+
+/* section three */
 
 
 
 .section_three{
-    
-    /* align-items: center;
-    justify-content: space-evenly; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   max-width: 90vw;
     color: aliceblue;
-    /* flex-wrap: wrap; */
-   display: flex;
-   gap: 20px;
+    margin: auto;
+
+}
+
+.tv_panel img{
+    width: 555px;
+   
+}
+.tv_panel {
+    position: relative;
+}
+.tv_panel  video{
+    position: absolute;
+    top: 40px;
+    right: 110px;
+    z-index: -10;
+   width: 350px;
    
 }
 
-.panel_para{
-    width: 40%;
-    /* border: 2px solid red; */
-    
-}
-
-.tv_panel{
-    /* border: 2px solid red; */
-    width: 50%;
-    /* border: 2px solid red; */
-    height: 100vh;
-    margin-top: 50px;
-   
-   
-}
-.section_three p{
-    font-size: 1.5rem;
-}
 
 
-.section_three h1{
-    font-size: 3rem;
+.panel_para p{
+    font-size: 1.4rem;
+}
+
+.panel_para h1{
+    font-size: 2rem;
     font-weight: 900;
 }
 
-.section_three video{
-    /* border: 2px solid rgb(4, 255, 0); */
-    position: relative;
-    bottom: 450px;
-    left: 120px;
-    z-index: -4;
-    width:400px;
-}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section four */
 
 
 .section_four{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+   max-width: 90vw;
     color: aliceblue;
-    /* flex-wrap: wrap; */
-    margin: 40px;    
+    margin: auto;
 }
 
-.child_para{
-    width: 40%;
+
+
+.child_para p{
+    font-size: 1.4rem;
 }
 
-.section_four p{
-    font-size: 1.5rem;
-}
-
-.section_four h1{
-    font-size: 3rem;
+.child_para h1{
+    font-size: 2rem;
     font-weight: 900;
 }
 
@@ -388,3 +359,38 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1496px) {
+    .main .box h1,.main .box h4,.main .box h3{
+        margin: 7px 0;
+        font-weight: 500;
+
+    }
+
+    .main .box{
+        /* border: 2px solid red; */
+        top: 100px;
+    }
+    
+}
+
+
+/* @media (max-width:1100px) {
+    .section_two,.section_four{
+        flex-direction: column;
+    }
+} */
